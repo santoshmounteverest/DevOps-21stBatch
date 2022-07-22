@@ -1,0 +1,6 @@
+Aws_Lab_001
+
+1. Single EC2 Instance
+
+Goal
+The goal of this lab is to launch a single EC2 instance in a public subnet accessible over the Internet via SSH. Here is a mind map of EC2.
