@@ -16,3 +16,9 @@ Create tags (optional).
 Configure the Security Group rules (firewall).
 Launch the instance (choosing or creating an EC2 key pair).
 Let's begin!!! Go to AWS Console and login with your credentials. Click on Services at the top left, then choose EC2 in the Compute section.
+
+Step 1 - Choose the AMI
+In the EC2 service menu, click on Launch instance and select Launch Instance.
+
+
+
