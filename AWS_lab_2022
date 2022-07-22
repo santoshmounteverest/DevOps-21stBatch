@@ -4,3 +4,15 @@ Aws_Lab_001
 
 Goal
 The goal of this lab is to launch a single EC2 instance in a public subnet accessible over the Internet via SSH. Here is a mind map of EC2.
+
+Overview
+In order to achieve the goal of this lab, you will have to go through the following steps:
+
+Choose the operating system by selecting the Amazon Machine Image (AMI).
+Define the virtual hardware configuration by choosing an Instance Type.
+Review the network settings.
+Review the storage settings.
+Create tags (optional).
+Configure the Security Group rules (firewall).
+Launch the instance (choosing or creating an EC2 key pair).
+Let's begin!!! Go to AWS Console and login with your credentials. Click on Services at the top left, then choose EC2 in the Compute section.
