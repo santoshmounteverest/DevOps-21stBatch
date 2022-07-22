@@ -20,5 +20,50 @@ Let's begin!!! Go to AWS Console and login with your credentials. Click on Servi
 Step 1 - Choose the AMI
 In the EC2 service menu, click on Launch instance and select Launch Instance.
 
+Step 2 - Define the Instance Type
+The instance type defines the CPU and memory capacity. It also specifies the storage architecture that the 
+instance will suppport, along with network perfomance available. You can use the suggested free-tier eligible 
+instance type, and then go on to Next : Configuration Details.
+
+Step 3 - Network Settings
+Make sure you select the public default subnet and that the Auto-assign Public IP setting is enabled for that subnet. 
+You may leave all the other settings with their default values.
+
+Step 4 - Storage Settings
+You can accept the default settings which creates an EBS root volume.
+
+Step 5 - Tags
+Tags is a way to add textual metadata to AWS Resources to help you manage your cloud environment. For now, you can skip this step.
+
+Step 6 - Security Group
+The Security Group is a firewall for the instance. Create a new security group named ssh-access with a rule 
+that allows SSH from anywhere (or choose My IP if you prefer).
+
+Step 7 - Launch Instance
+You can review all the settings until this step in the next screen
+
+If everything is Ok, go on to Launch. In the new windows, for the key-pair you can create a new key pair 
+(name it lab-001). Download the key pair to your computer (the file will be named lab-001.pem).
+
+You will be forwarded to a new screen with the launch status.
+
+Go on to View Instances to return to the EC2 Console. There you will a list of existing instances and the new instance you just created.
+
+Test & Validation
+Once your instance is up and running, select it on the EC2 console and click on Connect
+
+From the new window, copy the example ssh command-line. It will have the following format:
+
+$ ssh -i "lab-001.pem" ec2-user@ec2-100-25-181-143.compute-1.amazonaws.com
+
+The ec2-user is the default user name in Amazon Linux AMIs. The hostname ec2-100-25-181-143.
+compute-1.amazonaws.com is the DNS name for your instance that AWS automatically defines. Open a terminal 
+window and move to the folder where you saved the downloaded key file lab-001.pem. Change the permissions of the key file:
+
+$ chmod 400 lab-001.pem
+
+Paste and run the ssh command. You should be able to log into your instance. If you are a Windows user, 
+you can also use Putty to connect. Follow this link for instructions.
+
 
 
